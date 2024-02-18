@@ -17,7 +17,7 @@ function addListItem(event) {
 function createListItem() {
   const listItem = document.createElement("li");
   listItem.append(input.value);
-  listItem.append(editButton());
+  //listItem.append(editButton());
   listItem.append(createDelButton());
   return listItem;
 }
@@ -34,6 +34,7 @@ function deleteItem({ target: { parentElement } }) {
   parentElement.remove();
 }
 
+/*
 function editButton() {
   const editButton = document.createElement("button");
   editButton.classList.add("spaceBetweenDelete");
@@ -73,3 +74,4 @@ function returnTextFromInput({
   event.target.parentElement.insertBefore(text, event.target);
   event.target.parentNode.firstChild.remove();
 }
+*/
